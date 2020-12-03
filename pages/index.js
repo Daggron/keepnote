@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { AddNote } from '../src/redux/actions';
+import Home from '../src/scenes/Home/Home';
 import { createNotesState } from '../src/utils/actionCreator';
 
-const Home = () => {
+const Index = () => {
   const notes = useSelector(_state => _state);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(createNotesState());
+    // console.log(data);
   },[]);
-
-  console.log(notes);
 
   if (notes.length === 0) {
     return (
@@ -22,13 +23,9 @@ const Home = () => {
   }
   return (
     <div>
-      <pre>
-        <code>
-          {JSON.stringify(notes, null, 2)}
-        </code>
-      </pre>
+     <Home /> 
     </div>
   );
 }
 
-export default Home;
+export default Index;

@@ -1,0 +1,50 @@
+@import url('./flex.css');
+@import url('./form.css');
+
+html,body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+  background-color: #8a76d0;
+  color: #eee;
+}
+
+.img-16 {
+  height: 16px;
+  width: 16px;
+}
+
+.h24 {
+  max-height: 24px;
+}
+
+.h96 {
+  max-height: 96px;
+}
+
+.mr16 {
+  margin-right: 16px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 16px;
+}
+
+a {
+  color: rgb(209, 71, 179);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(142, 46, 184);
+}

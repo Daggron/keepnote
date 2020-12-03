@@ -1,0 +1,40 @@
+.form {
+  background: #8a76d0;
+  box-shadow: 20px 20px 44px #7b69b9, 
+  -20px -20px 44px #9983e7;
+}
+
+form {
+  height: 100%;
+  margin: 12px;
+  overflow: hidden;
+  font-size: 16px;
+  transition: 1s;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+input[type="text"] {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #eee;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #eee;
+  margin-bottom: 4px;
+  resize: none;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #eee;
+}

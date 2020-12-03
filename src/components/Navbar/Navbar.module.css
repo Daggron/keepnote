@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.navbarContainer {
+  padding: 12px;
+  background: #8a76d0;
+  box-shadow:  0 0 20px 10px #7564b1; 
+  width: 100%;
+  top: 0;
+  left: 0;
+}
