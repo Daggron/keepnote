@@ -1,0 +1,57 @@
+.img-16 {
+  height: 16px;
+  width: 16px;
+}
+
+.h24 {
+  max-height: 24px;
+}
+
+.h96 {
+  max-height: 96px;
+}
+
+
+/* 
+  Margins 
+*/
+
+.mt56 {
+  margin-top: 56px;
+}
+
+.mt15pr {
+  margin-top: 15%;
+}
+
+.mr16 {
+  margin-right: 16px;
+}
+
+.mb4 {
+  margin-bottom: 4px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+/* 
+  padding
+*/
+
+.p16 {
+  padding: 16px;
+}
+
+/* 
+  Fonts
+*/
+
+.text-13 {
+  font-size: 13px;
+}
+
+.text-14 {
+  font-size: 14px;
+}

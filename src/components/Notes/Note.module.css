@@ -1,0 +1,12 @@
+.container {
+  border-radius: 25px;
+  background: #8a76d0;
+  box-shadow:  20px 20px 60px #7564b1, 
+              -20px -20px 60px #9f88ef;
+  padding: 16px;
+  max-height: 250px;
+}
+
+.container p {
+  max-width: 90%;
+}

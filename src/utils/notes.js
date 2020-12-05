@@ -33,3 +33,20 @@ export const deleteNoteById = async (id) => {
     return error;
   }
 }
+
+export const addNoteToDb = async (title, description, isPinned, isArchived) => {
+  const { db } = await connect();
+
+  try {
+    const response = await db.collection('notes').insertOne({
+      title,
+      description,
+      isPinned,
+      isArchived,
+    });
+    return response;
+  } catch(error) {
+    console.log(error);
+    return error;
+  }
+}

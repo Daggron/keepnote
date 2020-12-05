@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import NotesCreator from '../src/components/NotesCreator/NotesCreator';
 import { AddNote } from '../src/redux/actions';
 import Home from '../src/scenes/Home/Home';
 import { createNotesState } from '../src/utils/actionCreator';
@@ -11,7 +12,6 @@ const Index = () => {
 
   useEffect(() => {
     dispatch(createNotesState());
-    // console.log(data);
   },[]);
 
   if (notes.length === 0) {
@@ -23,7 +23,8 @@ const Index = () => {
   }
   return (
     <div>
-     <Home /> 
+     <Home />
+     <NotesCreator notes={notes} />
     </div>
   );
 }
