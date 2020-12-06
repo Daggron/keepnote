@@ -15,15 +15,6 @@
 /* 
   Margins 
 */
-
-.mt56 {
-  margin-top: 56px;
-}
-
-.mt15pr {
-  margin-top: 15%;
-}
-
 .mr16 {
   margin-right: 16px;
 }
@@ -54,4 +45,18 @@
 
 .text-14 {
   font-size: 14px;
+}
+
+/* rest-button-style */
+
+.reset-button-style {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.pointer {
+  cursor: pointer;
 }

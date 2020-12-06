@@ -1,7 +1,17 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
 .formContainer {
-  max-width: 720px;
   width: 90%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  max-width: 720px;
+}
+
+.icoButton {
+  margin-right: 16px;
+  color: #e6891d;
 }
