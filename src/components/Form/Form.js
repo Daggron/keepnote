@@ -23,6 +23,14 @@ export default function Form() {
     setDescription(value);
   }
 
+  const togglePin = () => {
+    setIsPinned(!isPinned);
+  }
+
+  const toggleArchive = () => {
+    setIsArchived(!isArchived);
+  }
+
   const onSubmit = (e) => {
     e.preventDefault();
     dispatch(AddCreatedNote(title, description, isPinned, isArchived));
@@ -54,16 +62,40 @@ export default function Form() {
                 <div>
                   {
                     isPinned ? (
-                      <IcoButton src="pinned.svg" title="Unpin note" alt="unpin button" className={`${style.icoButton}`}/>
+                      <IcoButton
+                        src="pinned.svg"
+                        title="Unpin note"
+                        alt="unpin button"
+                        className={`${style.icoButton}`}
+                        onClick={togglePin}
+                      />
                     ) : (
-                      <IcoButton src="pin.svg" title="Pin note" alt="pin button" className={`${style.icoButton}`}/>
+                      <IcoButton
+                        src="pin.svg"
+                        title="Pin note"
+                        alt="pin button" 
+                        className={`${style.icoButton}`}
+                        onClick={togglePin}
+                      />
                     )
                   }
                   {
                     isArchived ? (
-                      <IcoButton src="acrhived.svg" title="Unarchive note" alt="unarchive button" className={`${style.icoButton}`}/>
+                      <IcoButton
+                        src="acrhived.svg"
+                        title="Unarchive note"
+                        alt="unarchive button"
+                        className={`${style.icoButton}`}
+                        onClick={toggleArchive}
+                      />
                     ) : (
-                      <IcoButton src="unarchive.svg" title="archive note" alt="archive button" className={`${style.icoButton}`}/>
+                      <IcoButton
+                        src="unarchive.svg"
+                        title="archive note"
+                        alt="archive button"
+                        className={`${style.icoButton}`}
+                        onClick={toggleArchive}
+                      />
                     )
                   }
                 </div>
