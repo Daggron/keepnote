@@ -31,9 +31,18 @@ export default function Form() {
     setIsArchived(!isArchived);
   }
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    dispatch(AddCreatedNote(title, description, isPinned, isArchived));
+    dispatch(AddCreatedNote(title, description, isPinned, isArchived))
+    .then(() => {
+      setDescription('');
+      setTitle('');
+      setShowDescription(false);
+      setIsPinned(false);
+      setIsArchived(false);
+    }).catch(err => {
+      console.log(err);
+    })
   }
 
   return (
